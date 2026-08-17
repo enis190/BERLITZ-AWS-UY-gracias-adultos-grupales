@@ -1,0 +1,68 @@
+.c-menu {
+    background-color: #FFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    z-index: 99;
+    -webkit-box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.16);
+box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.16);
+    ul {
+        display: inline-flex;
+        list-style: none;
+        padding: 0px;
+        margin-bottom: 0px;
+        li{
+            margin-right: 11px;
+            transition: 0.3s !important;
+            a{
+                text-decoration: none;
+                color: $COLOR_1;
+                text-transform: uppercase;
+                font-family: 'IBMPlexSans-Bold'; 
+                font-size: .85rem;
+                transition: 0.3s !important;
+                border-radius: 10px;
+                border:1px solid #FFF;
+                padding: 8px 5px;
+                &:hover, &.active{
+                    border-radius: 10px;
+                    border:1px solid $COLOR_3;
+                    background-color: $COLOR_3;
+                    color: #FFF;
+                }
+                &.azul{
+                    background-color: $COLOR_1;
+                    color: #FFF;
+                    &:hover, &.active{
+                        border-radius: 10px;
+                        border:1px solid $COLOR_1;
+                        background-color: $COLOR_1;
+                    }
+                }
+            }
+        }
+    }
+    &.c-fixed{
+        position: fixed;
+        top: 0;
+    }
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
